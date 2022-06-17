@@ -149,6 +149,8 @@ body {
   
   .todolist li {
     font-size: 30px;
+    user-select: none;
+    -webkit-user-select: none;
   }
   
 
