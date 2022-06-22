@@ -37,6 +37,7 @@ ul {
   display: block;
   padding: 0 30px;
   opacity: 1;
+  transition: all 0.3s ease;
 }
 
 .hidden {
@@ -129,6 +130,7 @@ ul {
   justify-content: center;
   align-items: center;
   z-index: 10;
+  transition: all 0.3s ease;
 }
 
 .aside .logo {
@@ -183,6 +185,7 @@ ul {
   display: none;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s ease;
 }
 
 .aside .nav-toggler span {
@@ -490,6 +493,7 @@ h3.my-profession {
   max-height: 350px;
   margin-bottom: 30px;
   border-radius: 10px;
+  width: 112%;
 }
 
 .portfolio .portfolio-item-inner .portfolio-img{
@@ -501,13 +505,32 @@ h3.my-profession {
 .portfolio .portfolio-item-inner .portfolio-img h2 {
   font-family: 'Poppins', sans-serif;
   padding: 0px 10px;
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
 
-.portfolio .portfolio-item-inner .portfolio-img h4 {
+.portfolio .portfolio-item-inner .portfolio-img a,.portfolio .portfolio-item-inner .portfolio-img h3 {
+  display: inline-block;
+} 
+
+.portfolio .portfolio-item-inner .portfolio-img .h4 {
   font-family: 'Poppins', sans-serif;
-  padding: 1px 6px;
+  padding: 3px 6px;
+  margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 22px;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img .lg {
+  font-family: 'Poppins', sans-serif;
+  padding: 3px 6px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 22px;
+}
+
+.portfolio .portfolio-item-inner .portfolio-img .sm {
+  display: none;
 }
 
 .portfolio .portfolio-item-inner .portfolio-img h3 {
@@ -524,7 +547,7 @@ h3.my-profession {
 }
 
 .portfolio .portfolio-item-inner img:hover {
-  transform: scale(2);
+  transform: scale(1.5);
   z-index: 100;
 }
 
@@ -532,3 +555,138 @@ h3.my-profession {
   transform: scale(1);
   cursor: default;
 }
+
+@media (max-width:1199px) {
+  .aside {
+    left: -270px;
+  }
+
+  .aside.open{
+    left: 0;
+  }
+
+  .aside .nav-toggler{
+    display: flex;
+    left:30px;
+  }
+
+  .aside .nav-toggler.open {
+    left: 300px
+  }
+
+  .section {
+    left: 0;
+  }
+
+  .main-content {
+    padding-left: 0;
+  }
+  .about .about-content .personal-info .info-item p span{
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media (max-width:991px){
+
+  .about .about-content .education {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .about .about-content .experience {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .portfolio .portfolio-item-inner{
+    width: 113%;
+  }
+
+  .portfolio .portfolio-item-inner img {
+    display: none;
+  } 
+
+  .portfolio .portfolio-item-inner .portfolio-img{
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
+
+  .portfolio .portfolio-item-inner .portfolio-img .lg {
+    display: none;
+  }
+
+  .portfolio .portfolio-item-inner .portfolio-img .title {
+    margin-left:140px;
+    margin-right:70px;
+  }
+
+  .portfolio .portfolio-item-inner .portfolio-img .title-Js {
+    margin-left:160px;
+  }
+
+  .portfolio .portfolio-item-inner .portfolio-img .sm {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    padding: 3px 6px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 22px;
+    margin-left: 260px;
+  }
+
+  .portfolio .portfolio-item-inner .portfolio-img h2 {
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-left: 280px;
+  }
+  .portfolio .portfolio-item-inner .portfolio-img h3 {
+    margin-left: 310px;
+  }
+
+  .portfolio .portfolio-item-inner .portfolio-img .wait {
+    margin-left: 120px;
+    margin-top: 20px;
+  }
+
+
+  .home .home-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .home .home-img {
+    display: none;
+  }
+}
+
+@media (max-width:768px){
+  .portfolio .portfolio-item-inner .portfolio-img h2 {
+    margin-left: 150px;
+
+  }
+
+  .portfolio .portfolio-item-inner .portfolio-img .title {
+    margin-left:70px;
+
+  }
+
+  .portfolio .portfolio-item-inner .portfolio-img .title-Js {
+    margin-left:70px;
+  }
+
+  .portfolio .portfolio-item-inner .portfolio-img h3 {
+    margin-top: -10px;
+    margin-left: 200px;
+  }
+
+  .portfolio .portfolio-item-inner .portfolio-img .sm {
+    margin-top: 10px;
+    margin-left: 150px;
+  }
+}
+
+/* 2:19:27*/

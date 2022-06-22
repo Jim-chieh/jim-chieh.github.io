@@ -19,18 +19,18 @@
         <span></span>
       </div>
       <ul class="nav">
-        <li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-        <li><a href="#"><i class="fa fa-user"></i>About</a></li>
-        <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+        <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+        <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+        <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
       </ul>
     </div>
     <div class="main-content">
       <secition class="home section ">
-        <div class="container">
+        <div class="container" id="home">
           <div class="row">
             <div class="home-info padd-15">
               <h3 class="hello">Hello,my name is <span class="name">Jay Huang</span></h3>
-              <h3 class="my-profession">I'm a <span class="typing">web designer</span></h3>
+              <h3 class="my-profession">I want to be a <span class="typing"></span><h3 class="my-profession">  Front-End Developer !</h3></h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, ea commodi voluptatibus quisquam dolorum explicabo dicta placeat magnam nesciunt odit ipsam assumenda nemo maiores exercitationem cum amet, alias voluptatem ipsum!</p>
               <a href="#contact" class="btn hire-me">More About Me</a>
             </div>
@@ -41,7 +41,7 @@
         </div>
       </secition>
       <section class="about section ">
-        <div class="container">
+        <div class="container" id="about">
           <div class="row">
             <div class="section-title padd-15">
               <h2>About Me</h2>
@@ -127,7 +127,7 @@
             </div>
           </section>
       <section class="portfolio section">
-        <div class="container">
+        <div class="container" id="portfolio">
           <div class="row">
             <div class="section-title padd-15">
               <h2>Portfolio</h2>
@@ -143,9 +143,10 @@
             <div class="portfolio-item padd-15">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-img">
-                  <h2>TodoList</h2>
-                  <h4>使用純Js撰寫，並使用localStorage儲存資料</h4>
-                  <h4>-點擊圖片跳轉至實際應用畫面-</h4>
+                  <h2>TodoList JS</h2>
+                  <h4 class="title-Js">使用純Js撰寫，並使用localStorage儲存資料</h4>
+                  <h4 class="lg">-點擊圖片跳轉至實際應用畫面-</h4>
+                  <a href="https://jim-chieh.github.io/index.html?fbclid=IwAR311ujoLWFoUzHIDD1RdD7A7NgfG6iZq446G9kRAmil50upmKxyaiC2zqY" target="_blank"><h4 class="sm">-點我跳轉至實際應用畫面-</h4></a>
                   <a href="https://github.com/Jim-chieh/todolist" target="_blank"><h3>-Github Page-</h3></a>
                 </div> 
                 <a href="https://jim-chieh.github.io/index.html?fbclid=IwAR311ujoLWFoUzHIDD1RdD7A7NgfG6iZq446G9kRAmil50upmKxyaiC2zqY" target="_blank"><img src="photo/ex634-41vrj.gif"  alt="" ></a>
@@ -157,8 +158,9 @@
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-img">
                   <h2>Stop Watch</h2>
-                  <h4>使用純Js撰寫，藉此練習選擇器與事件綁定的應用</h4>
-                  <h4>-點擊圖片跳轉至實際應用畫面-</h4>
+                  <h4 class="title">使用純Js撰寫，藉此練習選擇器與事件綁定的應用</h4>
+                  <h4 class="lg">-點擊圖片跳轉至實際應用畫面-</h4>
+                  <a href="https://jim-chieh.github.io/stopwatch/stopwatch.html" target="_blank"><h4 class="sm">-點我跳轉至實際應用畫面-</h4></a>
                   <a href="https://github.com/Jim-chieh/todolist" target="_blank"><h3>-Github Page-</h3></a>
                 </div> 
                 <a href="https://jim-chieh.github.io/stopwatch/stopwatch.html" target="_blank"><img src="photo/f1b99-mgzn1.gif" alt=""></a>
@@ -170,8 +172,9 @@
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-img">
                   <h2>TodoList-React</h2>
-                  <h4>使用React框架撰寫，使用localStorage儲存資料，以及semantic-ui呈現畫面。練習React框架的使用。</h4>
-                  <h4>-尚未部屬該網站，請見諒-</h4>
+                  <h4 class="title">使用React框架撰寫，使用localStorage儲存資料，以及練習使用semantic-ui-react呈現畫面。</h4>
+                  <h4 class="lg">-尚未部屬該網站，請見諒-</h4>
+                  <h4 class="sm">-尚未部屬該網站，請見諒-</h4>
                   <a href="https://github.com/Jim-chieh/todolist" target="_blank"><h3>-Github Page-</h3></a>
                 </div> 
                 <img src="photo/0vj9y-pf7pp.gif"  alt="" >
@@ -182,7 +185,7 @@
             <div class="portfolio-item padd-15">
               <div class="portfolio-item-inner shadow-dark">
                 <div class="portfolio-img">
-                <h2>Please wait for update...</h2> 
+                <h2 class="wait">Please wait for update...</h2> 
                 </div> 
                 <img class="last" src="photo/carbon_pattern.png" alt="">
               </div>
@@ -198,6 +201,7 @@
     </div>
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
