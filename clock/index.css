@@ -1,0 +1,116 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.clock-surface {
+  width: 40vw;
+  height: 40vw;
+  background-color: #ccc;
+  border-radius: 50%;
+  position: relative;
+}
+
+
+.clock-hour,
+.clock-min,
+.clock-sec {
+  width: 1%;
+  position: absolute;
+  background-color: red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  transform-origin: bottom;
+  z-index: 2;
+  border-radius: 25%;
+}
+
+.clock-pin {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1rem;
+  height: 1rem;
+  background: rgb(38,0,255);
+  border: 2px solid #ffffff;
+  border-radius: 10rem;
+  margin: auto;
+  z-index: 10;
+}
+
+.clock-hour {
+  height: 25%;
+  background-color: black;
+}
+.clock-min {
+  height: 30%;
+  background-color: #ff9900;
+}
+.clock-sec {
+  height: 40%;
+  background-color: red;
+  transform-origin: 50% 85%;
+}
+
+.clock-12, .clock-3 , .clock-6 ,.clock-9 {
+  width: 2px;
+  height: 5px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+.clock-12 {
+  width: 7px;
+  height: 30px;
+  position:absolute;
+  top: -90%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.clock-3 {
+  width: 30px;
+  height: 7px;
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: -90%;
+  bottom: 0;
+  margin: auto;
+}
+
+.clock-6 {
+  width: 7px;
+  height: 30px;
+  position:absolute;
+  top: 90%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.clock-9 {
+  width: 30px;
+  height: 7px;
+  position:absolute;
+  top: 0;
+  left: -90%;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
